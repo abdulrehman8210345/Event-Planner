@@ -19,6 +19,13 @@ app.use(cors({
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+
+app.get("/",(req,res)=>{
+   res.json({
+    success:true,
+    message:"Server is up and running",
+   })
+})
 app.use("/api/message",messageRouter);
 
 connectiondb();
