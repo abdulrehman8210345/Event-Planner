@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
     // console.log(formValues);
     await axios
-      .post("http://localhost:5000/api/message/send", formValues, {
+      .post("https://sangria-tuna-coat.cyclic.app/api/message/send", formValues, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
