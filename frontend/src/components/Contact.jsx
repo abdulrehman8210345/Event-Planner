@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault();
     // console.log(formValues);
     await axios
-      .post("https://event-planner-4ccy.vercel.app/api/message/send", formValues, {
+      .post("https://event-planner-2koh.vercel.app/api/message/send", formValues, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
