@@ -23,7 +23,7 @@ app.use(express.urlencoded({extended:true}));
 app.get("/",(req,res)=>{
    res.json({
     success:true,
-    message:"Server is up and running",
+    message:"Server is up and running,Welcome to event Planner",
    })
 })
 app.use("/api/message",messageRouter);
